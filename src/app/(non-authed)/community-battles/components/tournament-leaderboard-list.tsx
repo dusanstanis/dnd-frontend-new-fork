@@ -87,7 +87,7 @@ const TournamentLeaderboardList = ({
 
   const content = (
     <div className="flex w-full flex-1 flex-col items-center px-1">
-      <div className="w-full flex-1 overflow-y-auto" style={{ maxHeight: "650px" }}>
+      <div className="w-full flex-1 overflow-y-auto" style={{ maxHeight: "800px" }}>
         <table className="mb-2 w-full table-auto text-left text-white">
           <thead className="sticky top-0 z-20 bg-[#1a1d2e] font-bold uppercase text-white">
             <tr>

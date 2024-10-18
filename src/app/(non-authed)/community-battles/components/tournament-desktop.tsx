@@ -131,7 +131,7 @@ const TournamentDesktop = () => {
             onClick={handleArrowSpinning}
           />
         )}
-        <p className="text-sm text-white">
+        <p className="text-lg text-white">
           It can take up to <strong className="font-semibold text-red-400">2 minutes</strong> for
           the AI to rate your query after a successful transaction. Please{" "}
           <strong className="font-semibold text-red-400">refresh the page</strong> to see the
