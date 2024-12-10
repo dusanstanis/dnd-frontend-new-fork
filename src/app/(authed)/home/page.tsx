@@ -33,14 +33,18 @@ const Page = () => {
     ? () => {
         setClosingAdventureId(adventureDetailId);
         setAdventureDetailId(undefined);
-        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        if (typeof window !== "undefined") {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }
         setTimeout(() => setClosingAdventureId(undefined), 500);
       }
     : campaignDetailId
     ? () => {
         setClosingCampaignId(campaignDetailId);
         setCampaignDetailId(undefined);
-        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        if (typeof window !== "undefined") {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }
         setTimeout(() => setClosingCampaignId(undefined), 500);
       }
     : undefined;
